@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import kmmsharedmodule
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+         textLabel.text = Greeting().greeting()
     }
 
 

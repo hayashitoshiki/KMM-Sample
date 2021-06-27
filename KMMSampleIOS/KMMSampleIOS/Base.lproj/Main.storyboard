@@ -21,18 +21,37 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="↓KMM base 文言" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkq-FM-oCk">
+                                <rect key="frame" x="140.5" y="490.5" width="133" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3F-yl-RYg">
+                                <rect key="frame" x="148" y="543" width="119" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="b5r-dJ-tc7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4hf-Ce-xJg"/>
+                            <constraint firstItem="J3F-yl-RYg" firstAttribute="top" secondItem="hkq-FM-oCk" secondAttribute="bottom" constant="32" id="Kvs-dt-Hku"/>
                             <constraint firstItem="b5r-dJ-tc7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MQr-U8-GMG"/>
+                            <constraint firstItem="J3F-yl-RYg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fyh-U7-5it"/>
+                            <constraint firstItem="hkq-FM-oCk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gOG-AT-SXc"/>
+                            <constraint firstItem="hkq-FM-oCk" firstAttribute="top" secondItem="b5r-dJ-tc7" secondAttribute="bottom" constant="32" id="yDp-dM-wJ6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="textLabel" destination="J3F-yl-RYg" id="QDs-Oy-bi6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="126"/>
+            <point key="canvasLocation" x="137.68115942028987" y="125.89285714285714"/>
         </scene>
     </scenes>
 </document>

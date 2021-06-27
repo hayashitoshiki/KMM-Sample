@@ -15,6 +15,8 @@
 		36681B1C2688AD3A00A1EDBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36681B1A2688AD3A00A1EDBA /* LaunchScreen.storyboard */; };
 		36681B272688AD3A00A1EDBA /* KMMSampleIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36681B262688AD3A00A1EDBA /* KMMSampleIOSTests.swift */; };
 		36681B322688AD3A00A1EDBA /* KMMSampleIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36681B312688AD3A00A1EDBA /* KMMSampleIOSUITests.swift */; };
+		36681B422688B61F00A1EDBA /* kmmsharedmodule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36681B412688B61F00A1EDBA /* kmmsharedmodule.framework */; };
+		36681B432688B61F00A1EDBA /* kmmsharedmodule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 36681B412688B61F00A1EDBA /* kmmsharedmodule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		36681B442688B61F00A1EDBA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				36681B432688B61F00A1EDBA /* kmmsharedmodule.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		36681B0C2688AD3900A1EDBA /* KMMSampleIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KMMSampleIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36681B0F2688AD3900A1EDBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +65,8 @@
 		36681B2D2688AD3A00A1EDBA /* KMMSampleIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KMMSampleIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36681B312688AD3A00A1EDBA /* KMMSampleIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KMMSampleIOSUITests.swift; sourceTree = "<group>"; };
 		36681B332688AD3A00A1EDBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36681B402688B58300A1EDBA /* kmmsharedmodule.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = kmmsharedmodule.framework.dSYM; path = "../KMMSampleAndroid/kmmsharedmodule/build/xcode-frameworks/kmmsharedmodule.framework.dSYM"; sourceTree = "<group>"; };
+		36681B412688B61F00A1EDBA /* kmmsharedmodule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = kmmsharedmodule.framework; path = "../KMMSampleAndroid/kmmsharedmodule/build/xcode-frameworks/kmmsharedmodule.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36681B422688B61F00A1EDBA /* kmmsharedmodule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +102,7 @@
 				36681B252688AD3A00A1EDBA /* KMMSampleIOSTests */,
 				36681B302688AD3A00A1EDBA /* KMMSampleIOSUITests */,
 				36681B0D2688AD3900A1EDBA /* Products */,
+				36681B3F2688B58300A1EDBA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +148,15 @@
 			path = KMMSampleIOSUITests;
 			sourceTree = "<group>";
 		};
+		36681B3F2688B58300A1EDBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36681B412688B61F00A1EDBA /* kmmsharedmodule.framework */,
+				36681B402688B58300A1EDBA /* kmmsharedmodule.framework.dSYM */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +167,7 @@
 				36681B082688AD3900A1EDBA /* Sources */,
 				36681B092688AD3900A1EDBA /* Frameworks */,
 				36681B0A2688AD3900A1EDBA /* Resources */,
+				36681B442688B61F00A1EDBA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -435,6 +465,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../KMMSampleAndroid/kmmsharedmodule/build/xcode-frameworks";
 				INFOPLIST_FILE = KMMSampleIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../KMMSampleAndroid/kmmsharedmodule/build/xcode-frameworks";
 				INFOPLIST_FILE = KMMSampleIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
