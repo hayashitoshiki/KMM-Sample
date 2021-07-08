@@ -1,3 +1,4 @@
 rootProject.name = "KMMSampleAndroid"
 include ':app'
 include ':kmmsharedmodule'
+include ':data'

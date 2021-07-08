@@ -31,6 +31,7 @@ android {
         jvmTarget = '1.8'
     }
     buildFeatures {
+        dataBinding true
         viewBinding true
     }
 }
@@ -50,6 +51,11 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
+    // koin
+    def koin_version = "3.0.2"
+    implementation "io.insert-koin:koin-android:$koin_version"
+
     // KMM
     implementation project(":kmmsharedmodule")
+    implementation project(":data")
 }

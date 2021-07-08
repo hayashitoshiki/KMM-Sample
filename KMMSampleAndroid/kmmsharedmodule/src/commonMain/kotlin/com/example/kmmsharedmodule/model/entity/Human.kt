@@ -6,7 +6,7 @@ import com.example.kmmsharedmodule.model.value.Gender
 /**
  * 人間定義
  */
-class Human (
+data class Human (
 
     /**
      * 性別
