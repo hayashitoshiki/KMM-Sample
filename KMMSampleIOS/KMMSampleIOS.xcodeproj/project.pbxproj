@@ -17,6 +17,7 @@
 		36681B322688AD3A00A1EDBA /* KMMSampleIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36681B312688AD3A00A1EDBA /* KMMSampleIOSUITests.swift */; };
 		36681B422688B61F00A1EDBA /* kmmsharedmodule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36681B412688B61F00A1EDBA /* kmmsharedmodule.framework */; };
 		36681B432688B61F00A1EDBA /* kmmsharedmodule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 36681B412688B61F00A1EDBA /* kmmsharedmodule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3683D49726992A2900B82FC6 /* LocalHumanRepositoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3683D49626992A2900B82FC6 /* LocalHumanRepositoryImp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		36681B332688AD3A00A1EDBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36681B402688B58300A1EDBA /* kmmsharedmodule.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = kmmsharedmodule.framework.dSYM; path = "../KMMSampleAndroid/kmmsharedmodule/build/xcode-frameworks/kmmsharedmodule.framework.dSYM"; sourceTree = "<group>"; };
 		36681B412688B61F00A1EDBA /* kmmsharedmodule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = kmmsharedmodule.framework; path = "../KMMSampleAndroid/kmmsharedmodule/build/xcode-frameworks/kmmsharedmodule.framework"; sourceTree = "<group>"; };
+		3683D49626992A2900B82FC6 /* LocalHumanRepositoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalHumanRepositoryImp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		36681B0E2688AD3900A1EDBA /* KMMSampleIOS */ = {
 			isa = PBXGroup;
 			children = (
+				3683D49526992A0D00B82FC6 /* data */,
 				36681B0F2688AD3900A1EDBA /* AppDelegate.swift */,
 				36681B112688AD3900A1EDBA /* SceneDelegate.swift */,
 				36681B132688AD3900A1EDBA /* ViewController.swift */,
@@ -155,6 +158,14 @@
 				36681B402688B58300A1EDBA /* kmmsharedmodule.framework.dSYM */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3683D49526992A0D00B82FC6 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				3683D49626992A2900B82FC6 /* LocalHumanRepositoryImp.swift */,
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +302,7 @@
 			files = (
 				36681B142688AD3900A1EDBA /* ViewController.swift in Sources */,
 				36681B102688AD3900A1EDBA /* AppDelegate.swift in Sources */,
+				3683D49726992A2900B82FC6 /* LocalHumanRepositoryImp.swift in Sources */,
 				36681B122688AD3900A1EDBA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

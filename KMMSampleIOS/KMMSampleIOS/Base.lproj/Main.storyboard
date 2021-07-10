@@ -21,14 +21,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="↓KMM base 文言" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkq-FM-oCk">
-                                <rect key="frame" x="140.5" y="490.5" width="133" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UseCase1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkq-FM-oCk">
+                                <rect key="frame" x="168.5" y="490.5" width="77" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3F-yl-RYg">
-                                <rect key="frame" x="148" y="543" width="119" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UseCase2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3F-yl-RYg">
+                                <rect key="frame" x="168" y="543.5" width="78.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UseCase3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygF-Dg-JBJ">
+                                <rect key="frame" x="167.5" y="584.5" width="79" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -37,8 +43,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="b5r-dJ-tc7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4hf-Ce-xJg"/>
+                            <constraint firstItem="ygF-Dg-JBJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Eui-fy-Kwd"/>
                             <constraint firstItem="J3F-yl-RYg" firstAttribute="top" secondItem="hkq-FM-oCk" secondAttribute="bottom" constant="32" id="Kvs-dt-Hku"/>
                             <constraint firstItem="b5r-dJ-tc7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MQr-U8-GMG"/>
+                            <constraint firstItem="ygF-Dg-JBJ" firstAttribute="top" secondItem="J3F-yl-RYg" secondAttribute="bottom" constant="20" id="Zd7-I4-Xg1"/>
                             <constraint firstItem="J3F-yl-RYg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fyh-U7-5it"/>
                             <constraint firstItem="hkq-FM-oCk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gOG-AT-SXc"/>
                             <constraint firstItem="hkq-FM-oCk" firstAttribute="top" secondItem="b5r-dJ-tc7" secondAttribute="bottom" constant="32" id="yDp-dM-wJ6"/>
@@ -46,7 +54,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="textLabel" destination="J3F-yl-RYg" id="QDs-Oy-bi6"/>
+                        <outlet property="textLabe2" destination="J3F-yl-RYg" id="cnW-D4-b5V"/>
+                        <outlet property="textLabe3" destination="ygF-Dg-JBJ" id="VYC-wq-xBo"/>
+                        <outlet property="textLabel" destination="hkq-FM-oCk" id="qkm-Yu-0cT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
